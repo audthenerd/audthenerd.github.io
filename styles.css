@@ -76,14 +76,54 @@ font-family: 'Over the Rainbow', cursive;
 	text-align: justify;
 	background-color: #1D2126;
 	color: white;
-	padding:50px 80px;
+	padding: 108px 80px;
 }
-
 
 span.caption {
 	letter-spacing: 10px;
 	font-weight: bold;
 	font-size: 37px;
+}
+
+h2.skills-title {
+	margin-bottom: 20px;
+}
+
+
+@media (max-width: 576px) {
+	.main, .skills, .about, .projects {
+    /* Create the parallax scrolling effect */
+    height: 50%;
+	}
+
+	div.title {
+		margin-left: 27px;
+	}
+
+	div.title p, div.skills-title p {
+		font-size: 23px;
+	}
+
+	div.fill-blanks {
+	margin-left: 166px;
+	}
+
+	div.fill-blanks p {
+		font-size: 23px;
+	}
+
+	.main, .about, .projects {
+		margin-top: -20px;
+    min-height: 495px;
+	}
+
+	.skills {
+		min-height: 300px;
+	}
+
+	.skills-text {
+		padding: 50px 80px;
+	}
 }
 /*
 .animate{
