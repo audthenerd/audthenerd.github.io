@@ -1,14 +1,22 @@
-var arrow = document.getElementById('details');
-
+//***********************************************
+//***********************************************
+//ARROW SCROLL DOWN
+//***********************************************
+//***********************************************
 $(document).scroll(function() {
   var y = $(this).scrollTop();
-  if (y > 200) {
-   $('i#details').fadeOut();
+  if (y > 160) {
+   $('span#details').fadeOut();
   } else {
-    $('i#details').fadeIn();
+    $('span#details').fadeIn();
   }
 });
 
+//***********************************************
+//***********************************************
+//FONT TYPING FOR CAPTION HEADER
+//***********************************************
+//***********************************************
  var TxtRotate = function(el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;
@@ -57,11 +65,30 @@ window.onload = function() {
     var period = elements[i].getAttribute('data-period');
     if (toRotate) {
       new TxtRotate(elements[i], JSON.parse(toRotate), period);
-    }
-  }
+    };
+
+    var travela = document.getElementsByClassName('travela-link')[0];
+    var msgTravela = document.getElementsByClassName('msg')[0];
+    msgTravela.style.display = "none";
+
+        function popup() {
+            console.log(this);
+            if(msgTravela.style.display == "none") {
+                msgTravela.style.display = "block";
+            } else {
+                msgTravela.style.display = "none";
+            }
+        };
+    travela.addEventListener('click', popup);
+}
   // INJECT CSS
   var css = document.createElement("style");
   css.type = "text/css";
   css.innerHTML = ".caption > .wrap { border-right: 0.08em solid #666 }";
   document.body.appendChild(css);
 };
+
+
+
+
+

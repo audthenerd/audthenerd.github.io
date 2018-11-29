@@ -24,7 +24,7 @@ div.skills-title {
 
 div.title p, div.skills-title p {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 50px;
+	font-size: 40px;
 	font-weight: bold;
 }
 
@@ -143,9 +143,9 @@ div.title p, div.skills-title p {
 
 svg#audrey {
 	  position: absolute;
-    margin-left: 297px;
-    margin-top: 4px;
-    margin-right: 250px;
+    margin-left: 19%;
+    margin-top: 0%;
+    margin-right: 64%;
 }
 
 div.fill-blanks {
@@ -153,14 +153,10 @@ div.fill-blanks {
   position: sticky;
 }
 
-/*div.fill-blanks p {
-font-size: 50px;
-font-family: 'Over the Rainbow', cursive;
-}*/
 
 .main {
     background-image: url(./images/laptop_edited.jpg);
-    min-height: 600px;
+    min-height: 546px;
     opacity: 0.8;
 }
 
@@ -218,12 +214,15 @@ h2.skills-title {
 	margin-bottom: 20px;
 }
 
-i.large.material-icons {
-		font-size: 6rem;
-    position: sticky;
-    margin-bottom: 20px;
-    margin-top: 375px;
-    margin-left: 600px;
+	span#details {
+		position: absolute;
+    bottom: 25%;
+    margin-left: 50%;
+    font-size: 50px;
+	}
+
+a:link {
+    color: inherit;
 }
 
 @media (max-width: 576px) {
@@ -249,9 +248,9 @@ i.large.material-icons {
 	}
 
 	svg#audrey {
-		margin-left: 174px;
-    margin-top: 2px;
-    margin-right: -92px;
+		margin-left: 35%;
+    margin-top: 0%;
+    margin-right: 37%;
 	}
 
 	.main, .about, .projects {
@@ -271,15 +270,16 @@ i.large.material-icons {
 		padding: 50px 80px;
 	}
 
-	i.large.material-icons {
-		font-size: 3rem;
-    margin-left: 250px;
-    margin-bottom: 0px;
-	}
-
 	span.caption {
 	font-size: 28px;
 }
+
+	span#details {
+    font-size: 30px;
+	}
+
 }
-/*
+
+
+
 
