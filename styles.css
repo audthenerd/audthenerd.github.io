@@ -28,17 +28,135 @@ div.title p, div.skills-title p {
 	font-weight: bold;
 }
 
+@keyframes audrey {
+	100% {
+		stroke-dashoffset: 0;
+	}
+}
+
+#audr1 {
+	stroke-dasharray: 500;
+	stroke-dashoffset: 500;
+	stroke-width: 6;
+	animation: audrey 3s linear forwards;
+}
+
+#audr2 {
+	stroke-dasharray: 500;
+	stroke-dashoffset: 500;
+	stroke-width: 4;
+	animation: audrey 2s linear forwards .3s;
+}
+
+#audr3 {
+	stroke-dasharray: 400;
+	stroke-dashoffset: 400;
+	stroke-width: 6;
+	animation: audrey .9s linear forwards .5s;
+}
+
+#audr4 {
+	stroke-dasharray: 400;
+	stroke-dashoffset: 400;
+	stroke-width: 6;
+	animation: audrey 2s linear forwards .6s;
+}
+
+#audr5 {
+	stroke-dasharray: 300;
+	stroke-dashoffset: 300;
+	stroke-width: 6;
+	animation: audrey 2s linear forwards 0.8s;
+}
+
+#audr6 {
+	stroke-dasharray: 300;
+	stroke-dashoffset: 300;
+	stroke-width: 7;
+	animation: audrey 4s linear forwards 1s;
+}
+
+#audr7 {
+	stroke-dasharray: 300;
+	stroke-dashoffset: 300;
+	stroke-width: 6;
+	animation: audrey 3s linear forwards 1.2s;
+}
+
+#audr8 {
+	stroke-dasharray: 500;
+	stroke-dashoffset: 500;
+	stroke-width: 6;
+	animation: audrey 2s linear forwards 1.4s;
+}
+
+#e1 {
+	stroke-dasharray: 300;
+	stroke-dashoffset: 300;
+	stroke-width: 5;
+	animation: audrey 1s linear forwards 1.6s;
+}
+
+#y1 {
+	stroke-dasharray: 500;
+	stroke-dashoffset: 500;
+	stroke-width: 5;
+	animation: audrey 1s linear forwards 1.8s;
+}
+
+#k1 {
+	stroke-dasharray: 500;
+	stroke-dashoffset: 500;
+	stroke-width: 5;
+	animation: audrey 1s linear forwards 2s;
+}
+
+#k2 {
+	stroke-dasharray: 500;
+	stroke-dashoffset: 500;
+	stroke-width: 5;
+	animation: audrey 1s linear forwards 2.1s;
+}
+
+
+#k3 {
+	stroke-dasharray: 500;
+	stroke-dashoffset: 500;
+	stroke-width: 5;
+	animation: audrey 1s linear forwards 2.2s;
+}
+
+#o1 {
+	stroke-dasharray: 500;
+	stroke-dashoffset: 500;
+	stroke-width: 5;
+	animation: audrey 1s linear forwards 2.6s;
+}
+
+
+#w1 {
+	stroke-dasharray: 500;
+	stroke-dashoffset: 500;
+	stroke-width: 5;
+	animation: audrey 1s linear forwards 2.8s;
+}
+
+svg#audrey {
+	  position: absolute;
+    margin-left: 297px;
+    margin-top: 4px;
+    margin-right: 250px;
+}
+
 div.fill-blanks {
-	margin-left: 372px;
-	top: 216px;
   position: -webkit-sticky; /* Safari */
   position: sticky;
 }
 
-div.fill-blanks p {
+/*div.fill-blanks p {
 font-size: 50px;
 font-family: 'Over the Rainbow', cursive;
-}
+}*/
 
 .main {
     background-image: url(./images/laptop_edited.jpg);
@@ -64,7 +182,7 @@ font-family: 'Over the Rainbow', cursive;
     opacity: 0.8;
 }
 
-.main-text, .projects-text {
+.main-text {
 	text-align: justify;
 	color: #777;
 	background-color:white;
@@ -74,9 +192,21 @@ font-family: 'Over the Rainbow', cursive;
 
 .skills-text {
 	text-align: justify;
-	background-color: #1D2126;
+	background-color:#2C2728;
 	color: white;
-	padding: 108px 80px;
+	padding: 78px 80px;
+}
+
+.projects-text {
+	text-align: justify;
+	color: #777;
+	background-image: url(./images/galaxy.jpg);
+	padding:70px 80px;
+	margin: 0 auto;
+}
+
+.projects-text h2, .projects-text p {
+	z-index: 2;
 }
 
 span.caption {
@@ -104,12 +234,10 @@ h2.skills-title {
 		font-size: 23px;
 	}
 
-	div.fill-blanks {
-	margin-left: 166px;
-	}
-
-	div.fill-blanks p {
-		font-size: 23px;
+	svg#audrey {
+		margin-left: 138px;
+    margin-top: 2px;
+    margin-right: 30px;
 	}
 
 	.main, .about, .projects {
@@ -126,14 +254,4 @@ h2.skills-title {
 	}
 }
 /*
-.animate{
- stroke-dasharray: 300;
- stroke-dashoffset: 300;
- animation: dash 5s linear forwards;
-}
-@keyframes dash {
-to {
- stroke-dashoffset: 0;
- }
-}
-*/
+
