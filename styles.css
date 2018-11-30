@@ -30,7 +30,8 @@ div.title p, div.skills-title p {
 
 img#audrey {
 	  position: absolute;
-    width: 27%;
+     width: 16vw;
+    left: -0.5vw;
 }
 
 div.fill-blanks {
@@ -150,6 +151,11 @@ i:hover {
 	animation: bounce 1s;
 }
 
+footer {
+	text-align: center;
+	color: grey;
+}
+
 @media (max-width: 576px) {
 	.main, .skills, .about, .projects {
     /* Create the parallax scrolling effect */
@@ -174,6 +180,7 @@ i:hover {
 
 	img#audrey {
 		width: 43vw;
+		left: -19vw;
 	}
 
 	.skills {
@@ -194,7 +201,7 @@ i:hover {
 
 	span#details {
     font-size: 7.5vw;
-    bottom: 45%;
+    bottom: 39vh;
 	}
 
 	p.contact-me {
