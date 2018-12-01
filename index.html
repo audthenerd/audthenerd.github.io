@@ -10,7 +10,7 @@
   <link href="./css/all.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Over+the+Rainbow" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.3.0/snap.svg-min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="styles.css">
     <title>Audrey Kow | Welcome!</title>
@@ -55,11 +55,39 @@
 <div class="projects-text">
     <h2 class="projects-title">MY PORTFOLIO</h2>
     <p>
-        <div class="msg">HELLO</div><button class="travela-link">Travela</button>| <a href="https://github.com/audthenerd/reasy_restaurant">Reasy</a> | <a href="https://github.com/audthenerd/deft_lms">DEFT</a> | <a href="https://github.com/audthenerd/scrabble_boardgame">Scrabble</a>
+        <button id="travela-link">Travela</button>| <a href="https://github.com/audthenerd/reasy_restaurant">Reasy</a> | <a href="https://github.com/audthenerd/deft_lms">DEFT</a> | <a href="https://github.com/audthenerd/scrabble_boardgame">Scrabble</a>
+    </p>
+    </div>
 
+
+    <!-- ***********
+    MODALS
+    *********** -->
+        <div id="myModal" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>TRAVELA <a href="https://github.com/audthenerd/travela">
+                <span class="contact-icons" style="color: grey;">
+                <i class="fab fa-github"></i></span></a><a href="https://my-travela.herokuapp.com/>
+                <span class="contact-icons" style="color: skyblue;">
+                <i class="fas fa-window-maximize"></i></span></a></h3>
+            <p><b><i>All-in-One: Itinerary Planner.Google Maps.Foursquare Places</i></b></p>
+            <div class="app-pic">
+                <img src="./images/travela/Travela-main.png"><img src="./images/travela/Travela-google.png"><img src="./images/travela/Travela-itinerary.png">
+            </div>
+
+            <p class="in-modal">
+                <ul>
+                    <li>Search for places of interest in Google Maps and scout for nearby gems with Foursquare Places.</li>
+                    <li>Add them into the Itinerary Planner with just one click!</li>
+                </ul>
+            </p>
+          </div>
+        </div>
 <!-- https://github.com/audthenerd/travela_latest -->
-</p>
-</div>
+
 <div class="about">
     </div>
 <div class="main-text">
@@ -89,6 +117,9 @@
 <footer>
     Copyright 2018
     </footer>
-<script type="text/javascript" src="script.js"></script>
+     <script src="https://code.jquery.com/jquery-3.2.1.min.js" />
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
