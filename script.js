@@ -68,30 +68,44 @@ window.onload = function() {
     };
 
     // Get the modal
-var modal = document.getElementById('myModal');
-
+var mod = document.getElementsByClassName('modal');
 // Get the button that opens the modal
-var btn = document.getElementById("travela-link");
+var btn = document.getElementsByClassName("btn");
+// var btn1 = document.getElementById("reasy-link");
+
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var span = document.getElementsByClassName("close");
 
 // When the user clicks the button, open the modal
-btn.onclick = function() {
-    modal.style.display = "block";
-}
+for (let i=0; i<span.length; i++){
+    btn[i].onclick = function() {
+        mod[i].style.display = "block";
+    }
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-}
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
+    span[i].onclick = function() {
+        mod[i].style.display = "none";
+
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        var modal = document.getElementById('myModal-travela');
+        var modal1 = document.getElementById('myModal-reasy');
+        var modal2 = document.getElementById('myModal-deft');
+        var modal3 = document.getElementById('myModal-scrabble');
+        if (event.target == modal || event.target == modal1 || event.target == modal2 || event.target == modal3) {
+           modal.style.display = "none";
+           modal1.style.display = "none";
+           modal2.style.display = "none";
+           modal3.style.display = "none";
+        }
     }
 }
+
+
 }
   // INJECT CSS
   var css = document.createElement("style");

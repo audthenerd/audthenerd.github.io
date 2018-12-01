@@ -82,7 +82,7 @@ div.fill-blanks {
 
 .projects-text {
 	text-align: justify;
-	color: #777;
+	color: white;
 	background-image: url(./images/galaxy.jpg);
 	padding: 106px 80px;
 	margin: 0 auto;
@@ -90,6 +90,10 @@ div.fill-blanks {
 
 .projects-text h2, .projects-text p {
 	z-index: 2;
+}
+
+.projects-text p {
+	font-size: 20px;
 }
 
 span.caption {
@@ -184,8 +188,20 @@ span.contact-icons {
 
 .app-pic img {
 	  max-width: 286px;
-    max-height: 174px;
+    max-height: 144px;
 }
+
+.app-pic1 img {
+	  max-width: 257px;
+    max-height: 174px;
+    margin: 2px;
+}
+
+.app-pic2 img {
+	  max-width: 269px;
+    max-height: 144px;
+    margin: 2px;
+ }
 
 a:link {
     color: inherit;
@@ -259,6 +275,18 @@ footer {
 
 	span.contact-icons {
 		font-size: 6.5vw;
+	}
+
+	.modal {
+		left: -63px;
+	}
+
+	.modal-content {
+		max-width: 75vw;
+	}
+
+	.modal-content img {
+		max-width: 20vw;
 	}
 
 }
