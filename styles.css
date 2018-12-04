@@ -31,7 +31,7 @@ div.title p, div.skills-title p {
 img#audrey {
 	  position: absolute;
      width: 16vw;
-    left: -0.5vw;
+    left: 15.5vw;
 }
 
 div.fill-blanks {
@@ -221,7 +221,11 @@ footer {
 	color: grey;
 }
 
-@media (max-width: 576px) {
+li.platform {
+	font-weight: bold;
+}
+
+@media screen and (max-width: 450px) {
 	.main, .skills, .about, .projects {
     /* Create the parallax scrolling effect */
     height: 50%;
@@ -245,7 +249,7 @@ footer {
 
 	img#audrey {
 		width: 43vw;
-		left: -19vw;
+		left: 51vw;
 	}
 
 	.skills {
