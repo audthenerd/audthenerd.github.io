@@ -225,6 +225,10 @@ li.platform {
 	font-weight: bold;
 }
 
+button {
+	margin-right: 10px;
+}
+
 @media screen and (max-width: 450px) {
 	.main, .skills, .about, .projects {
     /* Create the parallax scrolling effect */
@@ -240,10 +244,10 @@ li.platform {
   }
 
   div.skills-title {
-  	margin-top: 29%;
+  	margin-top: 39%;
   }
 
-	div.title p, div.skills-title p {
+	div.title p {
 		font-size: 7.5vw;
 	}
 
@@ -265,7 +269,7 @@ li.platform {
 	}
 
 	span.caption {
-	font-size: 28px;
+	font-size: 6.5vw;
 }
 
 	span#details {
@@ -274,7 +278,7 @@ li.platform {
 	}
 
 	p.contact-me {
-		font-size: 3.5vw;
+		font-size: 5vw;
 	}
 
 	span.contact-icons {
@@ -293,6 +297,15 @@ li.platform {
 		max-width: 20vw;
 	}
 
+	button {
+		width: 50vw !important;
+		font-size: 5.5vw !important;
+		margin-bottom: 8px !important;
+	}
+
+	div.project-text {
+		margin: 106px 68px;
+	}
 }
 
 
